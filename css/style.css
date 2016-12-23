@@ -1239,6 +1239,7 @@ img {
       width: 25px;
       height: 26px; }
   .actions__smile {
+    display: block;
     -ms-flex: 0 0 auto;
         flex: 0 0 auto;
     background-image: url(../img/png-sprite.png);
