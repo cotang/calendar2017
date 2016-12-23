@@ -39,6 +39,7 @@
     }
   }
   &__smile{
+    display: block;
     flex: 0 0 auto;
     @include sprite($s-smile);
     @include mq($from:xs, $until:lg){
