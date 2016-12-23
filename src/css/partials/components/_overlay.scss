@@ -56,3 +56,37 @@
     }
   }
 }
+.form{
+  display: none;
+  border: 1px solid grey;
+  background-color: $white;
+  padding: 60px 30px;
+
+  &__input{
+    display: block;
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 22px; 
+    border-radius: 5px;
+    border: 1px solid grey;
+    width: 370px;
+    @include mq($from:xs, $until:sm){
+      width: 100%;
+    }
+    &::-webkit-input-placeholder{
+      color: $text-color;         
+    }       
+    &::placeholder{
+      color: $text-color;         
+    }
+    &:focus::-webkit-input-placeholder{
+      color: transparent;         
+    }       
+    &:focus::placeholder{
+      color: transparent;         
+    } 
+  }
+  .btn{
+    max-width: 100%;
+  }
+}

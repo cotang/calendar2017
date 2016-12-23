@@ -17,8 +17,22 @@ jQuery(document).ready(function($){
       $('.overlay').fadeOut(400);
     });
   });
- 
+
+
+  /* Form in modal window */
+  $('.btn:not(.btn--form)').click( function(e){
+    e.preventDefault();
+    $('body').css({'overflow':'hidden'});   
+    $('.overlay').show();
+    $('.overlay').find('.form').fadeIn();
+    /* Close modal window */
+    $('.overlay__bg, .overlay__close').click( function(e){ 
+      e.preventDefault();
+      $('body').css({'overflow':'auto'});
+      $(this).closest('.overlay').find('.form').fadeOut();
+      $(this).closest('.overlay').fadeOut(400);
+    }); 
+  });
+
 
 });
-
-

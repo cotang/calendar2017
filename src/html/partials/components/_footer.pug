@@ -20,4 +20,7 @@ include ../abstracts/bemto/bemto.pug
   +e.wrapper
     +e.A.close(href="#")
 
-
+    +b.FORM.form(id="form", method="post", action="form.php")
+      +e.INPUT.input(type='text', name='name', placeholder='Ваше имя')
+      +e.INPUT.input(type='email', name='email', placeholder='Ваша эл.почта')
+      +b.BUTTON.btn--form(type='submit') Заказать

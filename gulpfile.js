@@ -65,7 +65,7 @@ var path = {
     deploy: 'build/**/*'
   },
   src: {
-    html: ['src/html/**/*.pug', '!src/html/partials/abstracts/bemto/**/*.*'],
+    html: ['src/html/**/*.pug', 'src/html/**/*.php', '!src/html/partials/abstracts/bemto/**/*.*'],
     htmlDir: 'src/html',
     js: 'src/js/*.js',
     css: './src/css/*.scss',

@@ -31,7 +31,9 @@ include ../abstracts/bemto/bemto.pug
         +b.order-now
           +e.H2.title Закажи сейчас и получи 25% скидку
           +e.description Процесс заказа займет не более 30 сек.
-          +e.FORM.form
-            +e.INPUT.input(type='email', name='Email', placeholder='Ваша эл.почта')
+          +e.FORM.form(id="form", method="post", action="form.php")
+            +e.INPUT.input(type='email', name='email', placeholder='Ваша эл.почта')
             +b.BUTTON.btn--form(type='submit') Заказать
+            //- .form-result
+
 
