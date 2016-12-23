@@ -107,8 +107,8 @@
               <div class="order-now">
                 <h2 class="order-now__title">Закажи сейчас и получи 25% скидку</h2>
                 <div class="order-now__description">Процесс заказа займет не более 30 сек.</div>
-                <form class="order-now__form">
-                  <input class="order-now__input" type="email" name="Email" placeholder="Ваша эл.почта" />
+                <form class="order-now__form" id="form" method="post" action="form.php">
+                  <input class="order-now__input" type="email" name="email" placeholder="Ваша эл.почта" />
                   <button class="btn btn--form" type="submit">Заказать</button>
                 </form>
               </div>
@@ -243,6 +243,11 @@
       <div class="overlay__bg"></div>
       <div class="overlay__wrapper">
         <a class="overlay__close" href="#"></a>
+        <form class="form" id="form" method="post" action="form.php">
+          <input class="form__input" type="text" name="name" placeholder="Ваше имя" />
+          <input class="form__input" type="email" name="email" placeholder="Ваша эл.почта" />
+          <button class="btn btn--form" type="submit">Заказать</button>
+        </form>
       </div>
     </div>
     <script src="js/script.min.js"></script>
