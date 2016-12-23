@@ -1,0 +1,23 @@
+.btn{
+  display: inline-block;
+  border: none;
+  outline: none;
+  color: $text-color-white;
+  @include font-family('PFBagueSansPro Bold', normal, normal); 
+  font-size: 24px; 
+  border-radius: 5px;
+  background-color: $green;
+  text-transform: uppercase;
+  padding: 15px 80px;
+  // width: 100%;
+  margin: 0;
+
+
+  &--form{
+    background: $gradient;
+  }
+  &--opt{
+    padding: 15px 25px;
+  }
+}
+

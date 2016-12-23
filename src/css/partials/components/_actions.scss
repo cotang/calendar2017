@@ -1,0 +1,49 @@
+.actions{
+  padding: 35px 0 60px;
+  background-color: $blue;
+  color: $text-color-white;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-right: 8.3333%;
+    @include mq($from:xs, $until:lg){
+      padding-right: 0;
+      flex-direction: column;
+    }
+  }
+  &__title{
+    flex: 0 0 auto;
+    font-size: 23px;
+    @include font-family('PFBagueSansPro Regular', normal, normal);
+    padding-right: 20px;    
+    @include mq($from:xs, $until:lg){
+      padding: 0;
+      margin: 20px 0;
+    }
+  }
+  &__step{
+    font-size: 16px;
+    padding: 0 20px;
+    @include mq($from:xs, $until:lg){
+      padding: 0;
+      margin: 20px 0;
+    }
+
+    &:after{
+      content: '';
+      display: inline-block;
+      vertical-align: top;
+      margin-left: 10px;
+      @include sprite($s-arrows);
+    }
+  }
+  &__smile{
+    flex: 0 0 auto;
+    @include sprite($s-smile);
+    @include mq($from:xs, $until:lg){
+      margin: 20px 0;
+    }
+  }
+}
+

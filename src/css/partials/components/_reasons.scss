@@ -1,0 +1,119 @@
+.reasons{
+  padding-top: 70px;
+  padding-bottom: 100px;
+  background-image: url(../img/putin-bg.png);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  text-align: center;
+  &__title{
+    font-size: 30px;
+    @include font-family('PFBagueSansPro Bold', normal, normal);
+    color: $blue;
+    text-transform: uppercase;
+    margin: 0 0 40px;
+  }
+}
+.reason-item{
+  @include mq($from:xs, $until:lg){
+    margin-bottom: 60px;
+  }
+
+  &:before{
+    content: '';
+    display: block;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: 162px;
+    width: 214px;
+    margin: 0 auto 30px;
+  }
+  &:nth-of-type(1){
+    &:before{
+      background-image: url(../img/reasons-limited.png);
+    }
+  }
+  &:nth-of-type(2){
+    &:before{
+      background-image: url(../img/reasons-portrait.png);
+    }
+  }
+  &:nth-of-type(3){
+    &:before{
+      background-image: url(../img/reasons-dimensions.png);
+    }
+  }
+  &:nth-of-type(4){
+    &:before{
+      background-image: url(../img/reasons-target.png);
+    }
+  }
+
+  &__title{
+    margin: 0 0 10px;
+    font-size: 28px;
+    text-transform: uppercase;
+    @include font-family('PFBagueSansPro Bold', normal, normal);
+  }
+  &__text{
+    line-height: 1.3333;
+    ul{
+      margin: 0;
+      text-align: left;
+      list-style-type: none;
+
+      li{
+        list-style-type: none;
+        position: relative;
+        &:before{
+          content: '•';
+          display: block;          
+          position: absolute;
+          top: -0.1em;
+          left: -0.75em;
+          font-size: 1.4em;
+          color: #b22637;
+        }
+      }
+    }
+  }
+}
+.order-now{
+  margin-top: 40px;
+  &__title{
+    font-size: 30px;
+    @include font-family('PFBagueSansPro Medium', normal, normal);
+    color: $blue;
+    margin: 0 0 10px;
+  }
+  &__description{
+    @include font-family('PFBagueSansPro Medium', normal, normal);
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  &__input{
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 22px; 
+    border-radius: 5px;
+    border: 1px solid grey;
+    width: 370px;
+    @include mq($from:xs, $until:sm){
+      width: 100%;
+    }
+    &::-webkit-input-placeholder{
+      color: $text-color;         
+    }       
+    &::placeholder{
+      color: $text-color;         
+    }
+    &:focus::-webkit-input-placeholder{
+      color: transparent;         
+    }       
+    &:focus::placeholder{
+      color: transparent;         
+    } 
+  }
+  &__btn{
+    margin-bottom: 20px;
+  }
+}

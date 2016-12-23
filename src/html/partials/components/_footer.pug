@@ -1,0 +1,23 @@
+include ../abstracts/bemto/bemto.pug
+
+// Footer
++b.FOOTER.footer
+  .container
+    .row.row-xs-middle
+      .col-xs-12.col-lg-3
+        +e.logo
+          img(src="img/logo.png", alt="logo", title="logo")
+      .col-xs-12.col-lg-3
+        +e.A.link--email(href="dk@regnum.ru", target="_blank") dk@regnum.ru 
+      .col-xs-12.col-lg-3
+        +e.A.link--tel(href="tel:+74959270130", target="_blank") 8 495 927 01 30
+      .col-xs-12.col-lg-3
+        +e.A.link--vk(href="#", target="_blank")
+        +e.A.link--fb(href="#", target="_blank")
+
++b.overlay
+  +e.bg
+  +e.wrapper
+    +e.A.close(href="#")
+
+

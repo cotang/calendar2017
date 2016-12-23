@@ -1,0 +1,66 @@
+.properties{
+  background-image: url(../img/properties-bg.png), $gradient;
+  background-position: 100% 0, 100% 100%;
+  background-repeat: no-repeat, no-repeat;
+  color: $text-color-white;  
+  padding: 45px 0 50px;
+
+  &__text-wrapper{
+    border-bottom: 1px solid #59629c;
+    @include mq($from:xs, $until:lg){
+      padding: 20px 0 0;
+    }
+    @include mq($from:xs, $until:sm){
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    &:nth-of-type(1){
+      .properties__text:before{
+        @include sprite($s-properties-like);
+      }
+    }
+    &:nth-of-type(2){
+      .properties__text:before{
+        @include sprite($s-properties-car);
+      }
+    }
+    &:nth-of-type(3){
+      .properties__text:before{
+        @include sprite($s-properties-pay);
+      }
+    }
+  }
+  &__text{
+    padding-bottom: 40px;
+    font-size: 20px;
+    &:before{
+      content: '';
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+}
+.opt{
+  margin-top: 30px;
+  &__text{
+    @include font-family('PFBagueSansPro Regular', normal, normal);
+    font-size: 20px;
+    line-height: (30/20);
+  }
+  &__btn{
+    @include mq($from:xs, $until:lg){
+      padding: 20px 0;
+      text-align: center;
+    }
+  }
+  &__btn-text{
+    text-align: center;
+    margin-top: 5px;
+    @include font-family('PFBagueSansPro Bold', normal, normal);
+    font-size: 22px;
+  }
+}
+
+
+

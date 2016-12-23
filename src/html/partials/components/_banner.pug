@@ -1,0 +1,22 @@
+include ../abstracts/bemto/bemto.pug
+
+
++b.SECTION.banner
+  .container
+    .row
+      .col-xs-12.col-lg-4.offset-lg-8
+        +e.text-wrapper
+          +e.text
+            +e.logo
+              img(src="img/logo.png", alt="logo", title="logo")
+            +e.slogan Календарь «Президент 2017» — это подарок бизнес-класса. 
+            +e.appeal Закажи эксклюзивный подарок на Новый Год!
+            +e.now 
+              .ttu Только сейчас!
+              | Бесплатная доставка в любой регион! 
+            +e.btn
+              +b.btn(href="#") Заказать
+          +e.price
+            +e.price-old 3500 руб.
+            +e.price-new 1999 руб.
+            +e.issue тираж ограниченный
